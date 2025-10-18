@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kliker-TEST</title>
+    <link rel="stylesheet" href="kliker.css">
+</head>
+<body>
+    <audio id="audio-klik" src="klik.mp3" autostart="false"></audio>
+    <audio id="audio-wrong" src="wrong.mp3" autostart="false"></audio>
+    <audio id="audio-buy" src="buy.mp3" autostart="false"></audio>
+    <div class="statystyki">
+        stawka za prace: <div id="licznik">1</div>zł |
+        Ilość pracowników: <div id="licznikpracownikow">0</div> |
+        Zarobki na minute <div id="zarobki">0</div>
+    </div><br>
+
+    <div class="zmiana1">
+        <p>Twój majątek wynosi: <p id="wynik">0</p> zł</p>
+        <br>
+        <br>
+        <div class="guziki">
+            <button id="klik">Praca</button>
+            <button id="koparka1" disabled>Kopanie bitcoinów</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="zmiana2">
+        <p>Wykup awans za <p id="kosztawansu">20</p> zł</p>
+        <button id="awans" width="">Awans</button>
+    </div>
+    <br>
+    <div class="zmiana2">
+        <p>Wykup pracownika za <p id="kosztpracownika">200</p> zł</p>
+        <button id="pracownik">Zatrudnij</button>
+    </div>
+    <br>
+    <div class="zmiana2">
+        <p>Kup koparke bitcoinów za <p id="kosztkoparki">1000</p> zł</p>
+        <button id="koparka">Kup</button>
+    </div>
+
+    <!-- Niewidzialny przycisk by dac troche miejsca na dole by lepiej wygladalo -->
+    <button id="niewidzialnyprzycisk"></button> 
+
+    <script src="app.js"></script>
+</body>
+</html>
